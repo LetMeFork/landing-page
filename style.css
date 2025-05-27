@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    padding: 0 15vw;
+    background-color: #1f2937;
+}
+
+.hero_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.hero_header_logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+
+.hero_header_links {
+    display: flex;
+    gap: 2vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.hero_header_links a:link,
+.hero_header_links a:hover,
+.hero_header_links a:visited {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.hero_header_links a:active {
+    color: #3882f6;
+}
