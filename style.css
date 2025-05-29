@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     height: 100px;
 }
 
@@ -61,10 +62,11 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 100px 0 150px 0;
 }
 
 .hero_main_text {
-    flex: 0 0 450px;
+    flex: 0 1 450px;
 }
 
 .hero_main_text h1 {
@@ -102,5 +104,8 @@ body {
 .hero_main_img {
     background-color: #6d747d;
     width: 550px;
-    height: 200px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
