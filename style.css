@@ -22,8 +22,14 @@ button {
     padding: 0 20vw;
 }
 
-.hero {
+.hero,
+.footer {
     background-color: #1f2937;
+}
+
+.hero_header,
+.footer {
+    height: 100%;
 }
 
 .hero_header {
@@ -31,7 +37,6 @@ button {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 8vh;
 }
 
 .hero_header_logo {
@@ -71,7 +76,8 @@ button {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10vh 0 17vh;
+    padding: 10vh 0 11vh;
+    gap: 5vh;
 }
 
 .hero_main_text {
@@ -111,9 +117,9 @@ button {
 }
 
 .hero_main_img {
-    background-color: #6d747d;
     width: 550px;
     height: 270px;
+    background-color: #6d747d;
     display: flex;
     justify-content: center;
     align-items: center;
