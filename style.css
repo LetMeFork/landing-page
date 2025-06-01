@@ -17,7 +17,8 @@ button {
 }
 
 .hero,
-.info,
+.content_info,
+.content_quote,
 .content_cta,
 .footer {
     padding: 0 20vw;
@@ -36,7 +37,7 @@ button {
 .hero_main_text h1,
 .hero_main_text button,
 .hero_main_img p,
-.cta_text,
+.content_cta_block *,
 .footer {
     color: #f9faf8;
 }
@@ -49,8 +50,13 @@ button {
     gap: 2.5vw;
 }
 
-.hero_header_logo {
+.hero_header_logo,
+.content_quote_author,
+.content_cta_text h1 {
     font-size: 24px;
+}
+
+.hero_header_logo {
     font-weight: 700;
 }
 
@@ -68,7 +74,6 @@ button {
 .hero_main_text button {
     font-size: 18px;
 }
-
 
 .hero_header_links a:link,
 .hero_header_links a:hover,
@@ -92,8 +97,8 @@ button {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10vh 0 17vh;
     gap: 5vh;
+    padding: 10vh 0 17vh;
 }
 
 .hero_main_text {
@@ -102,21 +107,29 @@ button {
 
 .hero_main_text h1 {
     font-size: 48px;
-    font-weight: 900;
-    margin: 0;
 }
 
+.hero_main_text h1,
+.content_info_heading {
+    font-weight: 900;
+}
+
+.hero_main_text h1,
 .hero_main_text p {
     margin: 0;
 }
 
 .hero_main_text button {
-    background-color: #3882f6;
     border: none;
     border-radius: 10px;
     margin: 15px 0;
     padding: 10px 30px;
     font-weight: 600;
+}
+
+.hero_main_text button,
+.content_cta_block {
+    background-color: #3882f6;
 }
 
 .hero_main_img {
@@ -128,7 +141,7 @@ button {
     align-items: center;
 }
 
-.info {
+.content_info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -137,28 +150,31 @@ button {
     padding-bottom: 7vh;
 }
 
-.info_heading {
+.content_info_heading {
     text-align: center;
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 900;
 }
 
-.info_imgs {
+.content_info_heading,
+.content_quote_itself {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.content_info_imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2.5vw;
 }
 
-.info_img_itself {
+.content_info_img_itself {
     width: 155px;
     height: 155px;
     border: 4px solid #3882f6;
     border-radius: 20px;
 }
 
-.info_img_subtext {
+.content_info_img_subtext {
     width: 155px;
     text-align: center;
 }
@@ -170,38 +186,27 @@ button {
     align-items: center;
 }
 
-.quote {
+.content_quote_block {
     display: flex;
     flex-direction: column;
     width: 36vw;
     margin: 7vh 0;
 }
 
-.quote_itself {
-    font-size: 36px;
+.content_quote_itself {
     font-style: italic;
     font-weight: 300;
-    color: #1f2937;
     margin: 0;
 }
 
-.quote_author {
+.content_quote_author {
     align-self: flex-end;
     margin: 0;
-    font-size: 24px;
     font-weight: bold;
     margin-top: 1vh;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 11vh;
-}
-
-.cta_block {
-    background-color: #3882f6;
+.content_cta_block {
     border-radius: 5px;
     margin: 11vh 0;
     padding: 6vh 12vw;
@@ -210,10 +215,13 @@ button {
     align-items: center;
 }
 
-.cta_block * {
+.content_cta_block * {
     margin: 0;
 }
 
-.cta_text h1 {
-    font-size: 24px;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 11vh;
 }
