@@ -7,9 +7,9 @@ html {
 }
 
 body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -174,7 +174,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 36vw;
-    margin: 6vh 0;
+    margin: 7vh 0;
 }
 
 .quote_itself {
@@ -202,11 +202,18 @@ button {
 
 .cta_block {
     background-color: #3882f6;
-    margin: 8vh 0;
+    border-radius: 5px;
+    margin: 11vh 0;
+    padding: 6vh 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cta_block * {
     margin: 0;
 }
 
-.cta_text {}
+.cta_text h1 {
+    font-size: 24px;
+}
