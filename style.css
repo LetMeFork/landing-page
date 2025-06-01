@@ -71,7 +71,8 @@ button {
 .hero_header_links,
 .hero_main_text p,
 .hero_main_img p,
-.hero_main_text button {
+.hero_main_text button,
+.content_cta_block button {
     font-size: 18px;
 }
 
@@ -119,17 +120,22 @@ button {
     margin: 0;
 }
 
-.hero_main_text button {
-    border: none;
-    border-radius: 10px;
-    margin: 15px 0;
-    padding: 10px 30px;
-    font-weight: 600;
+.hero_main_text button,
+.content_cta_block,
+.content_cta_block button {
+    background-color: #3882f6;
 }
 
 .hero_main_text button,
-.content_cta_block {
-    background-color: #3882f6;
+.content_cta_block button {
+    border-radius: 10px;
+    padding: 8px 35px;
+    font-weight: 600;
+}
+
+.hero_main_text button {
+    border: none;
+    margin: 15px 0;
 }
 
 .hero_main_img {
@@ -195,8 +201,12 @@ button {
 
 .content_quote_itself {
     font-style: italic;
-    font-weight: 300;
     margin: 0;
+}
+
+.content_quote_itself,
+.content_cta_text p {
+    font-weight: 300;
 }
 
 .content_quote_author {
@@ -207,16 +217,22 @@ button {
 }
 
 .content_cta_block {
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 11vh 0;
-    padding: 6vh 12vw;
+    padding: 6vh 7vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vw;
 }
 
 .content_cta_block * {
     margin: 0;
+}
+
+.content_cta_block button {
+    border: 2px solid #f9faf8;
 }
 
 .footer {
