@@ -18,6 +18,7 @@ button {
 
 .hero,
 .info,
+.content_cta,
 .footer {
     padding: 0 20vw;
 }
@@ -35,6 +36,7 @@ button {
 .hero_main_text h1,
 .hero_main_text button,
 .hero_main_img p,
+.cta_text,
 .footer {
     color: #f9faf8;
 }
@@ -197,3 +199,14 @@ button {
     align-items: center;
     min-height: 11vh;
 }
+
+.cta_block {
+    background-color: #3882f6;
+    margin: 8vh 0;
+}
+
+.cta_block * {
+    margin: 0;
+}
+
+.cta_text {}
