@@ -76,9 +76,7 @@ button {
     font-size: 18px;
 }
 
-.hero_header_links a:link,
-.hero_header_links a:hover,
-.hero_header_links a:visited {
+.hero_header_links a {
     text-decoration: none;
 }
 
