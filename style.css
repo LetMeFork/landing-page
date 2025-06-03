@@ -89,8 +89,12 @@ button {
     color: #b8bcc2;
 }
 
+.hero_header_links a:hover {
+    color: #e5e7eb;
+}
+
 .hero_header_links a:active {
-    color: #3882f6;
+    color: #f9faf8;
 }
 
 .hero_main {
